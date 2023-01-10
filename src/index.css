@@ -12,7 +12,7 @@
     @apply font-bold;
     @apply cursor-pointer;
     @apply underline;
-    @apply hover:text-myOrange;
+    @apply hover:brightness-90;
     @apply transition-all;
   }
 }

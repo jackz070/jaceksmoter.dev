@@ -1,29 +1,28 @@
-import React from "react";
+import { useRef } from "react";
 import ProjectCard from "./ProjectCard";
-
-const projects = [
-  {
-    title: "Pokemon App",
-    previewImage: "../public/img1.png",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet tempora quasi consectetur. Harum neque natus eius inventore accusantium sed.",
-  },
-  {
-    title: "QuickTODO",
-    previewImage: "../public/gif1.gif",
-    description:
-      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus maxime cumque obcaecati eum, alias delectus?",
-  },
-];
+import { easeIn, easeOut, motion, useInView } from "framer-motion";
+import { projects } from "../../ProjectData";
+import ScrollingMarquee from "../utils/ScrollingMarquee";
+// TODO extract projects to separate file
 
 const FrontendDeveloper = () => {
   return (
-    <div className="max-w-6xl mx-auto mb-24" id="frontendDeveloper">
-      <div className=" grid md:grid-cols-3 grid-cols-1 gap-4  items-center">
-        {projects.map((project) => (
-          <ProjectCard project={project} />
-        ))}
-      </div>
+    <div>
+      <ScrollingMarquee text={"Projects"} />
+
+      <motion.div
+        className="max-w-4xl mx-auto mb-24"
+        id="frontendDeveloper"
+        initial={{ y: 200 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
+      >
+        <div className=" grid md:grid-cols-2 grid-cols-1 gap-4  items-center">
+          {projects.map((project) => (
+            <ProjectCard project={project} />
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 };

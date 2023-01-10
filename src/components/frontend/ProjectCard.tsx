@@ -2,67 +2,65 @@ import React, { useState } from "react";
 import { RemoveScroll } from "react-remove-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import img1 from "../../assets/img1.png";
+import Tech from "./Tech";
 
 interface Props {
-  project: { title: string; previewImage: string; description: string };
+  project: {
+    title: string;
+    previewImage: string;
+    image: string;
+    tech: string[];
+    liveLink: string;
+    githubLink: string;
+    description: string;
+  };
 }
-
+//TODO optional more pictures / switchable in small view, modal gallery on click?
 const ProjectCard: React.FC<Props> = ({ project }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const { title, description, previewImage } = project;
+  const {
+    title,
+    previewImage,
+    image,
+    tech,
+    liveLink,
+    githubLink,
+    description,
+  } = project;
 
   return (
     <div className="flex justify-center">
       <motion.div
-        whileHover={{
-          scale: 1.05,
-          transition: { duration: 0.2 },
-        }}
         layout
-        transition={{
-          layout: { duration: 0.6, type: "spring" },
-          backgroundImage: { duration: 1 },
-        }}
-        className={` p-4 rounded-lg border-2 border-[rgba(255,255,255,0.5)]  ${
-          isOpen
-            ? "fixed inset-x-0 mx-auto top-[30vh] z-10 h-[430px] w-[650px] bg-gradient-to-bl from-[#ef32d9] to-[#89fffd] shadow-lg"
-            : "relative shadow-2xl brightness-110 w-80 h-80 "
-        }`}
-        onClick={() => {
-          setIsOpen(!isOpen);
-        }}
+        className={` p-4 rounded-lg relative w-96 h-[32rem] mb-8 `}
       >
         <motion.div>
-          <motion.img
-            src={previewImage}
-            className={`rounded-lg -z-10 ${isOpen ? "h-96" : "max-h-64"}`}
-            layout
-          />
+          <motion.img src={previewImage} className={`max-h-64`} layout />
+          <div className="w-full bg-myBlack h-[2px] mt-2 " />
+
           <motion.h2
             layout
-            className={`absolute text-myWhite font-bold  ${
-              isOpen
-                ? "bottom-0 -left-1 text-4xl w-[600px] drop-shadow-xl"
-                : "bottom-4  w-64 text-2xl drop-shadow-xl"
-            }`}
+            className={`font-bold tracking-wide uppercase text-2xl  text-myBlack`}
           >
             {title}
           </motion.h2>
+          <div className="flex w-full flex-wrap ">
+            {tech.map((tech) => (
+              <Tech tech={tech} />
+            ))}
+          </div>
+          <motion.div
+            className={`text-myBlack flex justify-between mb-2 w-[65%]`}
+          >
+            Visit:
+            <motion.a href={liveLink} target="_blank" className={``}>
+              Live site
+            </motion.a>
+            <motion.a href={githubLink} target="_blank" className={``}>
+              Github repo
+            </motion.a>
+          </motion.div>
+          <div className="">{description}</div>
         </motion.div>
-
-        {isOpen && (
-          <RemoveScroll>
-            <motion.div
-              className={`absolute top-8 right-4 max-w-xs text-myWhite`}
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              {description}
-            </motion.div>
-          </RemoveScroll>
-        )}
       </motion.div>
     </div>
   );
