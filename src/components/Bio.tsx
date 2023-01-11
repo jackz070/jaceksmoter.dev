@@ -1,8 +1,10 @@
 import ScrollingMarquee from "./utils/ScrollingMarquee";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import photoOfMe from "/me.jpg";
 
 // TODO add photo to the bio? Maybe to the start page?
+// TODO links, ids and so on with scroll to id links - they're fucked atm giving things like /bio#bio
 const Bio = () => {
   const bioRef = useRef(null);
 
@@ -24,9 +26,11 @@ const Bio = () => {
   return (
     <div ref={bioRef}>
       <ScrollingMarquee text="Bio" />
+      <div id="bio" />
       <div
-        className={`max-w-2xl sm:mx-auto mx-6 text-xl tracking-wide sm:leading-10 leading-8 font-serif mb-12 `}
+        className={`max-w-2xl sm:mx-auto mx-6 text-xl tracking-wide sm:leading-10 leading-8 font-sans mb-12 text-myBlack`}
       >
+        <img src={photoOfMe} className="float-left max-w-[40%] mr-4 mt-2" />
         <p className="mb-6">
           Having got my Masters in International Relations / Strategic Studies &
           History and Culture of Jews in Poland I’ve worked for 2,5 years in

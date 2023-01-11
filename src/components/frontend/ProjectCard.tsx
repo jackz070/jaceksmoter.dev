@@ -41,7 +41,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             width="352"
             height="199.75"
             className={``}
-            placeholder={<ProjectCardImagePlaceholder />}
+            placeholderSrc={previewImage}
           />
 
           <div className="w-full bg-myBlack h-[2px] mt-2" />
@@ -58,7 +58,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             ))}
           </div>
           <motion.div
-            className={`text-myBlack flex justify-between mb-2 w-[65%]`}
+            className={`text-myBlack flex justify-between mb-2 w-[75%]`}
           >
             Visit:
             <motion.a href={liveLink} target="_blank" className={``}>
@@ -68,7 +68,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
               Github repo
             </motion.a>
           </motion.div>
-          <div className="">{description}</div>
+          <div className="text-myBlack">{description}</div>
         </motion.div>
       </motion.div>
     </div>

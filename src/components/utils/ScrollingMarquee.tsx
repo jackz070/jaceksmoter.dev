@@ -20,10 +20,10 @@ const ScrollingMarquee = ({ text }: { text: string }) => {
 
   return (
     <div
-      className={`h-16  w-[100vw] overflow-hidden sticky top-10 z-30 bg-myWhite mb-6 flex items-center`}
+      className={`sm:h-16 h-8  w-[100vw] overflow-hidden sticky top-10 z-30 bg-myWhite mb-6 flex items-center`}
     >
       <motion.h2
-        className="ml-12 text-4xl uppercase whitespace-nowrap font-mono "
+        className="ml-12 sm:text-4xl text-xl uppercase whitespace-nowrap font-mono text-myBlack"
         variants={marqueeVariants}
         animate="animate"
       >

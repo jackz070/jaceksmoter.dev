@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import ContactSidebar from "./components/ContactSidebar";
 
 import { MotionConfig } from "framer-motion";
+import DarkModeSwitch from "./components/utils/DarkModeSwitch";
 
 //TODO think if I want photography in here or just link on top
 //TODO footer is supposed to repeat contact from hero in a more friendly way
@@ -20,6 +21,7 @@ function App() {
     <div className="relative scroll-smooth">
       <MotionConfig reducedMotion="user">
         <Hero />
+        <DarkModeSwitch />
         <ContactSidebar />
         <FrontendDeveloper />
         <Bio />

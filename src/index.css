@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    --color-white: #fef8f5;
+    --color-black: #010303;
+  }
+  body[class="dark"] {
+    --color-white: #010303;
+    --color-black: #fef8f5;
+  }
   html {
     scroll-behavior: smooth;
   }
   a {
     @apply tracking-wide;
     @apply font-sans;
-    @apply font-bold;
+
     @apply cursor-pointer;
     @apply underline;
     @apply hover:brightness-90;
     @apply transition-all;
+    @apply font-mono;
   }
 }

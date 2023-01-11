@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="h-[32rem] bg-myWhite">
       <ScrollingMarquee text="Contact" />
-      <motion.div className="mx-auto flex flex-col justify-center max-w-4xl  text-center">
+      <motion.div className="mx-auto flex flex-col justify-center max-w-4xl  text-center text-myBlack">
         <motion.h3
           className="text-2xl font-bold mb-6 mt-8 uppercase font-mono"
           initial={{ opacity: 0 }}

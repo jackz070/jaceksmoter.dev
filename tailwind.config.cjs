@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontSize: {
@@ -7,13 +8,13 @@ module.exports = {
         xl: "clamp(1rem, 0.9045rem + 0.4246vw, 1.414rem);",
       },
       colors: {
-        myWhite: "#fef8f5",
+        myWhite: "var(--color-white)",
         myLightGray: "#cddee1",
         myBlue: "#2a23fa",
         myOrange: "#e8421c",
         myCyan: "#7ff9ff",
         myGreen: "#6cbd4b",
-        myBlack: "#010303",
+        myBlack: "var(--color-black)",
       },
       keyframes: {
         circleMove1: {
@@ -69,7 +70,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['"Open Sans"'],
+      sans: ["Roboto"],
       serif: ["Domine"],
       mono: ["IBM Plex Mono"],
     },

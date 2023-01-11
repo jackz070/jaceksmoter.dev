@@ -45,7 +45,7 @@ const ContactSidebar = () => {
           exit={{ x: -130 }}
           transition={{ duration: 1.3, type: "spring" }}
           layout
-          className={`flex flex-col items-end fixed bottom-16 opacity-1 w-12 text-3xl ml-4 gap-2 
+          className={`flex flex-col items-end fixed bottom-16 opacity-1 w-12 text-3xl ml-4 gap-2 text-myBlack
       }`}
         >
           <a href={socialLinks.github} target="_blank" rel="noreferrer">
