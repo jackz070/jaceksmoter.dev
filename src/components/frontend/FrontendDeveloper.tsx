@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import { easeIn, easeOut, motion, useInView } from "framer-motion";
-import { projects } from "../../ProjectData";
+import { projects } from "../../assets/ProjectData";
 import ScrollingMarquee from "../utils/ScrollingMarquee";
 // TODO extract projects to separate file
 
@@ -11,7 +11,7 @@ const FrontendDeveloper = () => {
       <ScrollingMarquee text={"Projects"} />
 
       <motion.div
-        className="max-w-4xl mx-auto mb-24"
+        className="max-w-4xl mx-auto mb-4"
         id="frontendDeveloper"
         initial={{ y: 200 }}
         animate={{ y: 0 }}

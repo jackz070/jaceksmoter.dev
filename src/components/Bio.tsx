@@ -25,7 +25,7 @@ const Bio = () => {
     <div ref={bioRef}>
       <ScrollingMarquee text="Bio" />
       <div
-        className={`max-w-2xl sm:mx-auto mx-6  text-xl tracking-wide sm:leading-10 leading-8 font-serif h-[1600px] `}
+        className={`max-w-2xl sm:mx-auto mx-6 text-xl tracking-wide sm:leading-10 leading-8 font-serif mb-12 `}
       >
         <p className="mb-6">
           Having got my Masters in International Relations / Strategic Studies &

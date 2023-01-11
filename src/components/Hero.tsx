@@ -6,6 +6,7 @@ import {
   useInView,
   AnimatePresence,
 } from "framer-motion";
+import { socialLinks } from "../assets/socialLinks";
 
 const Hero = () => {
   const helloRef = useRef(null);
@@ -79,9 +80,9 @@ const Hero = () => {
             style={{ transform: iAmIsInView ? "none" : "translateX(400px)" }}
             transition={{ delay: 0.4, type: "spring" }}
           >
-            I'm a <a href="#frontendDeveloper">Front-end Developer</a>,{" "}
+            I'm a <a href="#frontendDeveloper">Front-end Developer</a>,
             <a>Photographer</a>, <br />
-            <a>dog dad</a>
+            <a>dog dad 🐕‍🦺</a>
             &nbsp;and&nbsp;
             <a>much more</a>
           </motion.div>
@@ -102,9 +103,24 @@ const Hero = () => {
             }}
             transition={{ delay: 0.6, type: "spring" }}
           >
-            You can find me on <a>Github</a>, <a>LinkedIn</a>, <a>Twitter</a>{" "}
-            and my <a>photography website</a>. My CV can be downloaded{" "}
-            <a>here</a>.
+            You can find me on
+            <a href={socialLinks.github} target="_blank" rel="noreferrer">
+              Github
+            </a>
+            ,
+            <a href={socialLinks.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            ,
+            <a href={socialLinks.twitter} target="_blank" rel="noreferrer">
+              Twitter
+            </a>
+            and my
+            <a href="https://jaceksmoter.com" target="_blank" rel="noreferrer">
+              photography website
+            </a>
+            . My CV can be downloaded
+            <a>in English</a> and <a>in Polish</a>.
             <br />
             You're welcome to email me at <a>jac.smoter@gmail.com</a>
           </motion.div>

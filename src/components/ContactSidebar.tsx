@@ -6,6 +6,7 @@ import {
   useInView,
   AnimatePresence,
 } from "framer-motion";
+import { socialLinks } from "../assets/socialLinks";
 
 import { AiOutlineFilePdf } from "@react-icons/all-files/ai/AiOutlineFilePdf";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
@@ -44,15 +45,45 @@ const ContactSidebar = () => {
           exit={{ x: -130 }}
           transition={{ duration: 1.3, type: "spring" }}
           layout
-          className={`flex flex-col fixed bottom-20 opacity-1 w-48 text-2xl ml-4 gap-2 
+          className={`flex flex-col items-end fixed bottom-16 opacity-1 w-12 text-3xl ml-4 gap-2 
       }`}
         >
-          <AiOutlineGithub />
-          <AiOutlineLinkedin />
-          <AiOutlineTwitter />
-          <FaDiscord />
-          <AiOutlineMail />
-          <AiOutlineFilePdf />
+          <a href={socialLinks.github} target="_blank" rel="noreferrer">
+            <AiOutlineGithub />
+          </a>
+          <a href={socialLinks.linkedin} target="_blank" rel="noreferrer">
+            <AiOutlineLinkedin />
+          </a>
+          <a href={socialLinks.twitter} target="_blank" rel="noreferrer">
+            <AiOutlineTwitter />
+          </a>
+          <a href={socialLinks.discord} target="_blank" rel="noreferrer">
+            <FaDiscord />
+          </a>
+          <a
+            href={`mailto: ${socialLinks.mail}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineMail />
+          </a>
+          <a
+            href="/Smoter_Jacek_CV-pl.pdf"
+            download
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineFilePdf />
+          </a>
+          <a
+            // TODO english CV for download
+            href={socialLinks.github}
+            download
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineFilePdf />
+          </a>
         </motion.div>
       )}
     </AnimatePresence>

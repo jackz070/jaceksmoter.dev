@@ -3,6 +3,8 @@ import { RemoveScroll } from "react-remove-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import img1 from "../../assets/img1.png";
 import Tech from "./Tech";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import ProjectCardImagePlaceholder from "../utils/ProjectCardImagePlaceholder";
 
 interface Props {
   project: {
@@ -28,14 +30,21 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   } = project;
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center h-[544px]">
       <motion.div
         layout
         className={` p-4 rounded-lg relative w-96 h-[32rem] mb-8 `}
       >
         <motion.div>
-          <motion.img src={previewImage} className={`max-h-64`} layout />
-          <div className="w-full bg-myBlack h-[2px] mt-2 " />
+          <LazyLoadImage
+            src={previewImage}
+            width="352"
+            height="199.75"
+            className={``}
+            placeholder={<ProjectCardImagePlaceholder />}
+          />
+
+          <div className="w-full bg-myBlack h-[2px] mt-2" />
 
           <motion.h2
             layout
