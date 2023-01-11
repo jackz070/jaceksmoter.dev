@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Pokemon App",
-    previewImage: "../public/gif-pokeapp.gif",
+    previewImage: "/gif-pokeapp.gif",
     image: "",
     tech: [
       "React",
@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: "jaceksmoter.com",
-    previewImage: "../public/gif-jaceksmotercom.gif",
+    previewImage: "/gif-jaceksmotercom.gif",
     image: "",
     tech: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://www.jaceksmoter.com/",
@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     title: "This website",
-    previewImage: "../public/gif-countries.gif",
+    previewImage: "/gif-countries.gif",
     image: "",
     tech: ["React", "TypeScript", "Tailwindcss", "HTML", "Framer Motion"],
     liveLink: "HERE :3",
@@ -38,7 +38,7 @@ export const projects = [
   },
   {
     title: "QuickTODO",
-    previewImage: "../public/gif-quickTODO.gif",
+    previewImage: "/gif-quickTODO.gif",
     image: "",
     tech: [
       "React",
@@ -57,7 +57,7 @@ export const projects = [
 
   {
     title: "Country App",
-    previewImage: "../public/gif-countries.gif",
+    previewImage: "/gif-countries.gif",
     image: "",
     tech: [
       "React",
@@ -75,7 +75,7 @@ export const projects = [
   },
   {
     title: "Product page",
-    previewImage: "../public/gif-ecommerceProduct.gif",
+    previewImage: "/gif-ecommerceProduct.gif",
     image: "",
     tech: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://fastidious-cat-04476b.netlify.app/",
