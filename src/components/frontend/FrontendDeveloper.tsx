@@ -17,7 +17,7 @@ const FrontendDeveloper = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
       >
-        <div className=" grid md:grid-cols-2 grid-cols-1 gap-4  items-center">
+        <div className=" grid md:grid-cols-2 grid-cols-1 gap-4  items-center mt-56">
           {projects.map((project) => (
             <ProjectCard project={project} />
           ))}
