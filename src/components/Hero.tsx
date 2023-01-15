@@ -13,7 +13,8 @@ const Hero = () => {
   const helloIsInView = useInView(helloRef, {
     margin: "-200px 0px 0px 0px",
   });
-
+  // TODO i am paragraph doesnt show up on my iphone 8 plus (height / offset makes it so?) it appears on a swipe left
+  // TODO width is fucked on mobile - those two are related - it's place the i am element takes before it comes in but it never does
   const iAmRef = useRef(null);
   const iAmIsInView = useInView(iAmRef, {
     margin: "-300px 0px 0px 0px",
@@ -67,7 +68,7 @@ const Hero = () => {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 exit={{ y: -100 }}
-                transition={{ delay: 0.7 }}
+                transition={{ delay: 0.4 }}
                 className="fixed -top-4 left-0 bg-myWhite w-full h-16 z-40"
               />
             )}
@@ -77,7 +78,7 @@ const Hero = () => {
             className={`text-xl md:ml-28 leading-tight font-sans font-light sm:max-w-lg max-w-md transition-all duration-1000 ${
               iAmIsInView ? "opacity-1" : "opacity-0"
             }  `}
-            style={{ transform: iAmIsInView ? "none" : "translateX(400px)" }}
+            style={{ transform: iAmIsInView ? "none" : "translateX(380px)" }}
             transition={{ delay: 0.4, type: "spring" }}
           >
             I'm a <a href="#frontendDeveloper">Front-end Developer</a>, &nbsp;
@@ -86,15 +87,7 @@ const Hero = () => {
             &nbsp;and&nbsp;
             <a href="#bio">much more</a>
           </motion.div>
-          <motion.div
-            className={` z-1  ${
-              nameIsInView
-                ? "opacity-0"
-                : "opacity-1 fixed right-20 top-0 bg-myBlack "
-            }`}
-          >
-            <div className={``}>Nav icons</div>
-          </motion.div>
+
           <motion.div
             ref={contactRef}
             className={`text-lg md:ml-40 leading-tight font-sans font-light sm:max-w-lg max-w-md transition-all duration-1000 ${

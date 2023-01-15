@@ -48,7 +48,7 @@ const DarkModeSwitch = () => {
 
   return (
     <div className="w-16 h-fit z-[20000] fixed top-2 right-4 ">
-      <label className=" flex items-center text-xs relative ">
+      <label className=" flex items-center text-xs relative cursor-pointer ">
         <input
           type="checkbox"
           className="w-fit h-fit peer appearance-none rounded-md"
