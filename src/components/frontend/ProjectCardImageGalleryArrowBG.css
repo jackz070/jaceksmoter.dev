@@ -1,0 +1,23 @@
+.next:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 43%;
+  right: 8px;
+  background-color: white;
+  filter: blur(22px);
+  z-index: -1;
+}
+
+.prev:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 43%;
+  left: 8px;
+  background-color: white;
+  filter: blur(22px);
+  z-index: -1;
+}

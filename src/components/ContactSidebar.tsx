@@ -15,20 +15,26 @@ import { AiOutlineLinkedin } from "@react-icons/all-files/ai/AiOutlineLinkedin";
 import { AiOutlineGithub } from "@react-icons/all-files/ai/AiOutlineGithub";
 import { FaDiscord } from "@react-icons/all-files/fa/FaDiscord";
 
+import { isMobile } from "react-device-detect";
+
 const ContactSidebar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showSideContacts, setShowSideContacts] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, {
-      passive: true,
-    });
-    scrollPosition >= 340
-      ? setShowSideContacts(true)
-      : setShowSideContacts(false);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (!isMobile) {
+      window.addEventListener("scroll", handleScroll, {
+        passive: true,
+      });
+      scrollPosition >= 340
+        ? setShowSideContacts(true)
+        : setShowSideContacts(false);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      setShowSideContacts(true);
+    }
   }, [scrollPosition]);
 
   const handleScroll = () => {
@@ -45,7 +51,12 @@ const ContactSidebar = () => {
           exit={{ x: -130 }}
           transition={{ duration: 1.3, type: "spring" }}
           layout
-          className={`flex flex-col items-end fixed bottom-16 opacity-1 w-12 text-3xl ml-4 gap-2 text-myBlack
+          className={`flex text-3xl opacity-1 w-12  gap-2 text-myBlack ${
+            // TODO fix centering of mobile bottom nav
+            isMobile
+              ? "flex-row ml-2 "
+              : "flex-col bottom-16 items-end ml-4 fixed"
+          }
       }`}
         >
           <a href={socialLinks.github} target="_blank" rel="noreferrer">
@@ -76,8 +87,7 @@ const ContactSidebar = () => {
             <AiOutlineFilePdf />
           </a>
           <a
-            // TODO english CV for download
-            href={socialLinks.github}
+            href="/Smoter_Jacek_CV_eng.pdf"
             download
             target="_blank"
             rel="noreferrer"

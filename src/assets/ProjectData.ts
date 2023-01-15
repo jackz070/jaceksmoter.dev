@@ -1,8 +1,14 @@
 export const projects = [
   {
+    // TODO setup image structure and integrate it with gallery component
     title: "Pokemon App",
-    previewImage: "/gif-pokeapp.gif",
-    image: "",
+    images: [
+      "/pokeapp3/gif-pokeapp-1.gif",
+      "/pokeapp3/gif-pokeapp-2.gif",
+      "/pokeapp3/mobile-pokeapp-1.png",
+      "/pokeapp3/mobile-pokeapp-2.png",
+    ],
+
     tech: [
       "React",
       "React-query",
@@ -19,8 +25,11 @@ export const projects = [
   },
   {
     title: "jaceksmoter.com",
-    previewImage: "/gif-jaceksmotercom.gif",
-    image: "",
+    images: [
+      "/jaceksmoter.com/gif-jaceksmotercom.gif",
+      "/jaceksmoter.com/mobile-jaceksmotercom-1.png",
+      "/jaceksmoter.com/mobile-jaceksmotercom-2.png",
+    ],
     tech: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://www.jaceksmoter.com/",
     githubLink: "https://github.com/jackz070/jaceksmoter.com",
@@ -29,8 +38,12 @@ export const projects = [
   },
   {
     title: "This website",
-    previewImage: "/gif-countries.gif",
-    image: "",
+    images: [
+      "/pokeapp3/gif-pokeapp-1.gif",
+      "/pokeapp3/gif-pokeapp-2.gif",
+      "/pokeapp3/mobile-pokeapp-1.png",
+      "/pokeapp3/mobile-pokeapp-2.png",
+    ],
     tech: ["React", "TypeScript", "Tailwindcss", "HTML", "Framer Motion"],
     liveLink: "HERE :3",
     githubLink: "https://github.com/jackz070/jaceksmoter.dev",
@@ -38,8 +51,7 @@ export const projects = [
   },
   {
     title: "QuickTODO",
-    previewImage: "/gif-quickTODO.gif",
-    image: "",
+    images: ["/quickTODO/gif-quickTODO.gif", "/quickTODO/mobile-quickTODO.png"],
     tech: [
       "React",
       "TypeScript",
@@ -57,8 +69,11 @@ export const projects = [
 
   {
     title: "Country App",
-    previewImage: "/gif-countries.gif",
-    image: "",
+    images: [
+      "/countryapp/gif-countries.gif",
+      "/countryapp/mobile-countries-1.png",
+      "/countryapp/mobile-countries-2.png",
+    ],
     tech: [
       "React",
       "Tailwindcss",
@@ -67,6 +82,7 @@ export const projects = [
       "Jest",
       "React Testing Library",
       "React Router",
+      "React Query",
     ],
     liveLink: "https://fastidious-cat-04476b.netlify.app/",
     githubLink: "https://github.com/jackz070/countries-rest-api",
@@ -75,8 +91,11 @@ export const projects = [
   },
   {
     title: "Product page",
-    previewImage: "/gif-ecommerceProduct.gif",
-    image: "",
+    images: [
+      "/productPage/gif-ecommerceProduct.gif",
+      "/productPage/mobile-ecommerceProduct-1.png",
+      "/productPage/mobile-ecommerceProduct-2.png",
+    ],
     tech: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://fastidious-cat-04476b.netlify.app/",
     githubLink: "https://github.com/jackz070/countries-rest-api",

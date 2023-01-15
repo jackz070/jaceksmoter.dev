@@ -28,9 +28,8 @@ const Bio = () => {
       <ScrollingMarquee text="Bio" />
       <div id="bio" />
       <div
-        className={`max-w-2xl sm:mx-auto mx-6 text-xl tracking-wide sm:leading-10 leading-8 font-sans mb-12 text-myBlack`}
+        className={`max-w-2xl sm:mx-auto mx-6 text-xl tracking-wide sm:leading-9 leading-8 font-sans mb-12 text-myBlack font-light`}
       >
-        <img src={photoOfMe} className="float-left max-w-[40%] mr-4 mt-2" />
         <p className="mb-6">
           Having got my Masters in International Relations / Strategic Studies &
           History and Culture of Jews in Poland I’ve worked for 2,5 years in
@@ -39,10 +38,19 @@ const Bio = () => {
           it’s an amazing approach to supporting people with mental health
           problems!). For me it was the time of learning to communicate better,
           listen to and understand needs of people more deeply and supporting
-          them in finding their agency. This experience led me to realise that
-          what I really need in my life is pursuing the teenage dream that I
-          gave up long time ago - becoming a software developer.
+          them in finding their agency.
         </p>
+        <div className="flex sm:flex-row flex-col items-center justify-center m-12">
+          <img
+            src={photoOfMe}
+            className="sm:max-w-[30%] max-w-[60%] sm:mb-0 mb-6  font-serif"
+          />
+          <p className="ml-8 font-serif max-w-sm">
+            This experience led me to realise that what I really need in my life
+            is pursuing the teenage dream that I gave up long time ago -
+            becoming a software developer.
+          </p>
+        </div>
         <p>
           I’ve started learning at the beginning of 2022 with HTML & CSS and
           moved to JavaScript and React some months later. You can find my

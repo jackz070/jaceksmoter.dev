@@ -18,16 +18,17 @@ import DarkModeSwitch from "./components/utils/DarkModeSwitch";
 //TODO fetch gallery images if they'll exist only on hover
 function App() {
   return (
-    <div className="relative scroll-smooth">
+    <div className="relative scroll-smooth ">
       <MotionConfig reducedMotion="user">
         <Hero />
         <DarkModeSwitch />
-        <ContactSidebar />
+
         <FrontendDeveloper />
         <Bio />
         {/* <Photographer /> */}
         <Footer />
         <BackgroundBlur />
+        <ContactSidebar />
       </MotionConfig>
     </div>
   );

@@ -4,14 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import img1 from "../../assets/img1.png";
 import Tech from "./Tech";
 
-import ProjectCardImageGallery from "./ProjectCardImageGallery";
-import { Example } from "./EXPERIMENTProjectCardImageGallery";
+import { ProjectCardImageGallery } from "./ProjectCardImageGallery";
 
 interface Props {
   project: {
     title: string;
-    previewImage: string;
-    image: string;
+    images: string[];
     tech: string[];
     liveLink: string;
     githubLink: string;
@@ -20,25 +18,13 @@ interface Props {
 }
 //TODO optional more pictures / switchable in small view, modal gallery on click?
 const ProjectCard: React.FC<Props> = ({ project }) => {
-  const {
-    title,
-    previewImage,
-    image,
-    tech,
-    liveLink,
-    githubLink,
-    description,
-  } = project;
+  const { title, images, tech, liveLink, githubLink, description } = project;
 
   return (
-    <div className="flex justify-center h-[544px]">
-      <motion.div
-        layout
-        className={` p-4 rounded-lg relative w-96 h-[32rem] mb-8 `}
-      >
-        {/* <ProjectCardImageGallery previewImage={previewImage} /> */}
+    <div className="flex justify-center mt-[11.5rem] h-[360px] ">
+      <motion.div layout className={` p-4 rounded-lg w-96   mb-8 `}>
         <div className="">
-          <Example />
+          <ProjectCardImageGallery images={images} />
         </div>
         <div className="w-full bg-myBlack h-[2px] mt-2" />
 
@@ -56,7 +42,6 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         <motion.div
           className={`text-myBlack flex justify-between mb-2 w-[75%]`}
         >
-          Visit:
           <motion.a href={liveLink} target="_blank" className={``}>
             Live site
           </motion.a>
