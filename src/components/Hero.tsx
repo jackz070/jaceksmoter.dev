@@ -53,7 +53,6 @@ const Hero = () => {
 
   return (
     <AnimatePresence>
-      {megan && <MeganTheDog />}
       <div className={`text-myBlack`}>
         <motion.div
           className={`sm:px-[10vw] px-[4vw] md:py-[34vh] py-[26vh] pb-[20vh] h-[90vh] leading-tight mb-12`}
@@ -164,6 +163,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
+      {megan && <MeganTheDog megan={megan} setMegan={setMegan} />}
     </AnimatePresence>
   );
 };

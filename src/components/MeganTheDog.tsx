@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { RemoveScroll } from "react-remove-scroll";
 
 const imagePool = [
   "/MeganTheDog/M-1.png",
@@ -23,35 +24,42 @@ function getMultipleRandom(arr: string[], num: number) {
   return shuffled.slice(0, num);
 }
 
-let viewportHeight = window.innerHeight;
-let viewportWidth = window.innerWidth;
+// TODO even distibution of Megans
+// TODO hero animates out and doesnt come back :(
 
-const getRandomTop = () => {
-  let viewportHeight = window.innerHeight;
-  return `top-[${Math.floor(Math.random() * window.innerHeight)}px]`;
-};
-
-const MeganTheDog = () => {
+const MeganTheDog = ({
+  megan,
+  setMegan,
+}: {
+  megan: boolean;
+  setMegan: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   const randomImgs = getMultipleRandom(imagePool, 8);
   return (
-    <div className="w-[100vw] h-[100vh] top-0 left-0 fixed z-50">
-      {randomImgs.map((image) => (
-        <motion.img
-          src={image}
-          className={`h-56 absolute`}
-          initial={{
-            scale: 0,
-            x: Math.floor(Math.random() * window.innerWidth),
-            y: Math.floor(Math.random() * window.innerHeight),
-          }}
-          animate={{ rotate: 360, scale: 1 }}
-          transition={{
-            ease: "linear",
-            duration: 2,
-            rotate: { ease: "linear", duration: 2, repeat: Infinity },
-          }}
-        />
-      ))}
+    <div
+      className="w-[100vw] h-[96vh] bottom-0 left-0 fixed z-50"
+      onClick={() => setMegan(!megan)}
+    >
+      {" "}
+      <RemoveScroll>
+        {randomImgs.map((image) => (
+          <motion.img
+            src={image}
+            className={`h-48 absolute`}
+            initial={{
+              scale: 0,
+              x: Math.floor(Math.random() * window.innerWidth),
+              y: Math.floor(Math.random() * window.innerHeight),
+            }}
+            animate={{ rotate: 360, scale: 1 }}
+            transition={{
+              ease: "linear",
+              duration: 4,
+              rotate: { ease: "linear", duration: 2, repeat: Infinity },
+            }}
+          />
+        ))}
+      </RemoveScroll>
     </div>
   );
 };
