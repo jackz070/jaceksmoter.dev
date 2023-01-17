@@ -16,14 +16,14 @@ const marqueeVariants = {
 };
 
 const ScrollingMarquee = ({ text }: { text: string }) => {
-  const textToDisplay = Array(28).fill(text);
+  const textToDisplay = Array(56).fill(text);
 
   return (
     <div
       className={`sm:h-16 h-8  w-[100vw] overflow-hidden sticky top-10 z-30 bg-myWhite mb-6 flex items-center`}
     >
       <motion.h2
-        className="ml-12 sm:text-4xl text-xl uppercase whitespace-nowrap font-mono text-myBlack"
+        className="ml-12 md:text-2xl text-xl uppercase whitespace-nowrap font-mono text-myBlack"
         variants={marqueeVariants}
         animate="animate"
       >

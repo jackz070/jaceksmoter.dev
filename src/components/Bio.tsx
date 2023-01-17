@@ -3,28 +3,12 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import photoOfMe from "/me.jpg";
 
-// TODO add photo to the bio? Maybe to the start page?
 // TODO links, ids and so on with scroll to id links - they're fucked atm giving things like /bio#bio
 const Bio = () => {
   const bioRef = useRef(null);
 
-  const bioIsInView = useInView(bioRef, {
-    margin: "-50px 0px 0px 0px",
-  });
-
-  // const triggerBioRef = useRef(null);
-  // const triggerBioIsInView = useInView(triggerBioRef, {
-  //   margin: "0px 0px 0px 0px",
-  // });
-
-  // const shouldBeFixedOnTop = () => {
-  //   if (triggerBioIsInView) {
-  //     return bioIsInView;
-  //   } else return false;
-  // };
-
   return (
-    <div ref={bioRef}>
+    <section ref={bioRef} id="bio">
       <ScrollingMarquee text="Bio" />
       <div id="bio" />
       <div
@@ -34,11 +18,17 @@ const Bio = () => {
           Having got my Masters in International Relations / Strategic Studies &
           History and Culture of Jews in Poland I’ve worked for 2,5 years in
           mental health area, at a self-help Clubhouse following the &nbsp;
-          <a>Clubhouse International Standards of Quality</a> (check it out,
-          it’s an amazing approach to supporting people with mental health
-          problems!). For me it was the time of learning to communicate better,
-          listen to and understand needs of people more deeply and supporting
-          them in finding their agency.
+          <a
+            href="https://clubhouse-intl.org/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Clubhouse International
+          </a>
+          Standards of Quality (check it out, it’s an amazing approach to
+          supporting people with mental health problems!). For me it was the
+          time of learning to communicate better, listen to and understand needs
+          of people more deeply and supporting them in finding their agency.
         </p>
         <div className="flex sm:flex-row flex-col items-center justify-center m-12">
           <img
@@ -61,7 +51,7 @@ const Bio = () => {
           needs.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

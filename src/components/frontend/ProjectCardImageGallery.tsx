@@ -112,13 +112,13 @@ export const ProjectCardImageGallery: React.FC<{
           </AnimatePresence>
         </motion.div>
         <div
-          className={`next text-2xl top-[-12.5rem] absolute w-[40px] h-[199.75px] flex justify-center items-center select-none cursor-pointer z-[2] right-0 `}
+          className={`next text-2xl top-[-12.5rem] absolute w-[40px] h-[199.75px] flex justify-center items-center select-none cursor-pointer z-[2] right-0 active:scale-90`}
           onClick={() => paginate(1)}
         >
           <GoTriangleRight />
         </div>
         <div
-          className="prev text-2xl top-[-12.5rem] absolute w-[40px] h-[199.75px] flex justify-center items-center select-none cursor-pointer z-[2] left-0"
+          className="prev text-2xl top-[-12.5rem] absolute w-[40px] h-[199.75px] flex justify-center items-center select-none cursor-pointer z-[2] left-0 active:scale-90"
           onClick={() => paginate(-1)}
         >
           <GoTriangleLeft />

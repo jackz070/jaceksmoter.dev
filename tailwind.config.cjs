@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        dynamicXL: "clamp(3rem, 2.0769rem + 4.1026vw, 7rem);",
+        dynamicXL: "clamp(2.5rem, 1.4615rem + 4.6154vw, 7rem);",
         xl: "clamp(1rem, 0.9045rem + 0.4246vw, 1.414rem);",
       },
       colors: {

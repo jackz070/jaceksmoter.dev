@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { RemoveScroll } from "react-remove-scroll";
-import { motion, AnimatePresence } from "framer-motion";
-import img1 from "../../assets/img1.png";
+import React from "react";
+import { motion } from "framer-motion";
 import Tech from "./Tech";
-
 import { ProjectCardImageGallery } from "./ProjectCardImageGallery";
 
 interface Props {
@@ -16,7 +13,7 @@ interface Props {
     description: string;
   };
 }
-//TODO optional more pictures / switchable in small view, modal gallery on click?
+
 const ProjectCard: React.FC<Props> = ({ project }) => {
   const { title, images, tech, liveLink, githubLink, description } = project;
 
@@ -40,7 +37,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           ))}
         </div>
         <motion.div
-          className={`text-myBlack flex justify-between mb-2 w-[75%]`}
+          className={`text-myBlack flex justify-between my-1 w-[75%] mx-auto`}
         >
           <motion.a href={liveLink} target="_blank" className={``}>
             Live site

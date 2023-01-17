@@ -1,11 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {
-  useScroll,
-  useSpring,
-  motion,
-  useInView,
-  AnimatePresence,
-} from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { socialLinks } from "../assets/socialLinks";
 
 import { AiOutlineFilePdf } from "@react-icons/all-files/ai/AiOutlineFilePdf";
@@ -51,11 +45,10 @@ const ContactSidebar = () => {
           exit={{ x: -130 }}
           transition={{ duration: 1.3, type: "spring" }}
           layout
-          className={`flex text-3xl opacity-1 w-12  gap-2 text-myBlack ${
-            // TODO fix centering of mobile bottom nav
+          className={`flex sm:text-3xl text-2xl opacity-1 gap-2 text-myBlack  ${
             isMobile
-              ? "flex-row ml-2 "
-              : "flex-col bottom-16 items-end ml-4 fixed"
+              ? "flex-row  bg-myWhite justify-center"
+              : "flex-col bottom-16 items-end ml-4 fixed w-12"
           }
       }`}
         >
