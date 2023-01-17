@@ -113,10 +113,16 @@ const Hero = () => {
               Front-end Developer
             </a>
             , &nbsp;
-            <a>Photographer</a>, <br />
-            <a onClick={() => setMegan(!megan)}>
+            <a href="https://jaceksmoter.com" target="_blank" rel="noreferrer">
+              Photographer
+            </a>
+            , <br />
+            <a onClick={() => setMegan(!megan)} className="relative">
               Dog Dad {darkMode ? "🦮" : "🐕‍🦺"}
             </a>
+            {megan && (
+              <div className="text-sm absolute">(Click again to close)</div>
+            )}
             &nbsp;and&nbsp;
             <a
               onClick={() => {
@@ -157,8 +163,25 @@ const Hero = () => {
             <a href="https://jaceksmoter.com" target="_blank" rel="noreferrer">
               photography website
             </a>
-            . My CV can be downloaded&nbsp;<a>in English</a> and&nbsp;
-            <a>in Polish</a>. You're welcome to email me at&nbsp;
+            . My CV can be downloaded&nbsp;
+            <a
+              href="/Smoter_Jacek_CV_eng.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+            >
+              in English
+            </a>
+            &nbsp;and&nbsp;
+            <a
+              href="/Smoter_Jacek_CV-pl.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+            >
+              in Polish
+            </a>
+            . You're welcome to email me at&nbsp;
             <a>jac.smoter@gmail.com</a>
           </motion.div>
         </motion.div>

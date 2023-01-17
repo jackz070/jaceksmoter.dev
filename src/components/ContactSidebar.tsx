@@ -76,16 +76,24 @@ const ContactSidebar = () => {
             download
             target="_blank"
             rel="noreferrer"
+            className="relative"
           >
             <AiOutlineFilePdf />
+            <div className="absolute bottom-0 right-0 text-xs p-1 rounded-full bg-myBlack text-myWhite">
+              PL
+            </div>
           </a>
           <a
             href="/Smoter_Jacek_CV_eng.pdf"
             download
             target="_blank"
             rel="noreferrer"
+            className="relative"
           >
             <AiOutlineFilePdf />
+            <div className="absolute bottom-0 -right-1 text-xs p-1 rounded-full bg-myBlack text-myWhite">
+              ENG
+            </div>
           </a>
         </motion.div>
       )}

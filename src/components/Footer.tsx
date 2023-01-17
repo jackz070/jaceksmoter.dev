@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import ScrollingMarquee from "./utils/ScrollingMarquee";
+import MeganTheDog from "./MeganTheDog";
+import { useDarkMode } from "../context/DarkModeContext";
 
 const Footer = () => {
+  const [megan, setMegan] = useState(false);
+  const { darkMode } = useDarkMode();
   return (
     <div className="h-[32rem] bg-myWhite w-full">
       <ScrollingMarquee text="Contact" />
@@ -26,10 +31,14 @@ const Footer = () => {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.2 }}
           >
-            For more Megan the dog click here! 🐕‍🦺
+            For more Megan the dog{" "}
+            <a onClick={() => setMegan(!megan)}>
+              click here! {darkMode ? "🦮" : "🐕‍🦺"}
+            </a>
           </motion.p>
         </motion.div>
       </motion.div>
+      {megan && <MeganTheDog megan={megan} setMegan={setMegan} />}
     </div>
   );
 };
