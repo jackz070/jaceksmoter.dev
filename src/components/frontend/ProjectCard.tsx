@@ -14,6 +14,8 @@ interface Props {
   };
 }
 
+// TODO live / github links need improvement, they look bad
+
 const ProjectCard: React.FC<Props> = ({ project }) => {
   const { title, images, tech, liveLink, githubLink, description } = project;
 

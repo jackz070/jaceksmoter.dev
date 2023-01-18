@@ -18,8 +18,7 @@ const Hero = () => {
         ? "-160px 0px 0px 0px"
         : "-200px 0px 0px 0px",
   });
-  // TODO fix mobile landscape, check tablet landscape too
-  console.log(isLandscape && isMobile);
+  // TODO fix spaces in the hero section (inline <a> elements and text around them)
 
   const iAmRef = useRef(null);
   const iAmIsInView = useInView(iAmRef, {

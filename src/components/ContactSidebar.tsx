@@ -47,7 +47,7 @@ const ContactSidebar = () => {
           layout
           className={`flex sm:text-3xl text-2xl opacity-1 gap-2 text-myBlack  ${
             isMobile
-              ? "flex-row  bg-myWhite justify-center"
+              ? "flex-row  bg-myWhite justify-center pb-4"
               : "flex-col bottom-16 items-end ml-4 fixed w-12"
           }
       }`}

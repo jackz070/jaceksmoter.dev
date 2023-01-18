@@ -1,9 +1,8 @@
 import ScrollingMarquee from "./utils/ScrollingMarquee";
 import { useRef } from "react";
-import { useInView } from "framer-motion";
 import photoOfMe from "/me.jpg";
 
-// TODO links, ids and so on with scroll to id links - they're fucked atm giving things like /bio#bio
+// TODO section separation not readable on mobile ?
 const Bio = () => {
   const bioRef = useRef(null);
 
