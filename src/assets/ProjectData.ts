@@ -39,15 +39,15 @@ export const projects = [
   {
     title: "This website",
     images: [
-      "/pokeapp3/gif-pokeapp-1.gif",
-      "/pokeapp3/gif-pokeapp-2.gif",
-      "/pokeapp3/mobile-pokeapp-1.png",
-      "/pokeapp3/mobile-pokeapp-2.png",
+      "/jaceksmoterdev/gif-jaceksmoterdev-1.gif",
+      "/jaceksmoterdev/mobile-jaceksmoterdev-1.png",
+      "/jaceksmoterdev/mobile-jaceksmoterdev-2.png",
     ],
     tech: ["React", "TypeScript", "Tailwindcss", "HTML", "Framer Motion"],
-    liveLink: "HERE :3",
+    liveLink: "https://dev.jaceksmoter.com/",
     githubLink: "https://github.com/jackz070/jaceksmoter.dev",
-    description: "None atm, WIP",
+    description:
+      "A website that I've created to share some information about myself, showcase some of my projects and provide a handful of ways to contact me. One of the most important features are dog pictures. Can you find them?",
   },
   {
     title: "QuickTODO",
