@@ -11,13 +11,8 @@ import { MotionConfig } from "framer-motion";
 import DarkModeSwitch from "./components/utils/DarkModeSwitch";
 import MeganTheDog from "./components/MeganTheDog";
 
-//TODO think if I want photography in here or just link on top
-
-//TODO dog component
 //TODO Loaders for whole page and images
-//TODO pdf download language mark on scrolling contacts icons
 //TODO lazy loading of components at the bottom (first bg-blur and loader, then here, then projects, then rest)
-//TODO fetch gallery images if they'll exist only on hover
 
 function App() {
   useEffect(() => {

@@ -24,7 +24,7 @@ const Bio = () => {
           >
             Clubhouse International
           </a>
-          Standards of Quality (check it out, it’s an amazing approach to
+          &nbsp; Standards of Quality (check it out, it’s an amazing approach to
           supporting people with mental health problems!). For me it was the
           time of learning to communicate better, listen to and understand needs
           of people more deeply and supporting them in finding their agency.
@@ -43,11 +43,10 @@ const Bio = () => {
         <p>
           I’ve started learning at the beginning of 2022 with HTML & CSS and
           moved to JavaScript and React some months later. You can find my
-          projects big & small down above, but one I’m most happy about so far
-          is a simple photography portfolio webpage that I’ve designed & created
-          to display my work. It’s so good to feel the impact coding can make,
-          how important the result may be to people if it responds to their
-          needs.
+          projects big & small above, but one I’m most happy about so far is a
+          simple photography portfolio webpage that I’ve designed & created to
+          display my work. It’s so good to feel the impact coding can make, how
+          important the result may be to people if it responds to their needs.
         </p>
       </div>
     </section>

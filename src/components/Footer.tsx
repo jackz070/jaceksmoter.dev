@@ -19,7 +19,7 @@ const Footer = () => {
             I'm looking for challenges, work and connections.
           </motion.p>
           <motion.p className="mb-6">
-            Chat me up if you think I would be a good fit for your open source
+            Hit me up if you think I would be a good fit for your open source
             project or a good addition for your team.
           </motion.p>
           <motion.p className="mb-6">
@@ -31,7 +31,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.2 }}
           >
-            For more Megan the dog{" "}
+            For more Megan the dog
             <a onClick={() => setMegan(!megan)}>
               click here! {darkMode ? "🦮" : "🐕‍🦺"}
             </a>

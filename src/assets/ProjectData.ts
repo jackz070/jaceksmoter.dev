@@ -64,7 +64,7 @@ export const projects = [
     liveLink: "https://beautiful-fairy-ee9b71.netlify.app/",
     githubLink: "https://github.com/jackz070/QuickTODO",
     description:
-      "This simple todo app features drag nad drop movement of items within lists and between them, ability to edit them, persistance with local storage. Part of the app operation is covered by tests written in Vitest / React Testing Library.",
+      "This simple todo app features drag and drop movement of items within lists and between them, ability to edit them, persistance with local storage. Part of the app operation is covered by tests written in Vitest / React Testing Library.",
   },
 
   {
@@ -97,9 +97,9 @@ export const projects = [
       "/productPage/mobile-ecommerceProduct-2.png",
     ],
     tech: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://fastidious-cat-04476b.netlify.app/",
-    githubLink: "https://github.com/jackz070/countries-rest-api",
+    liveLink: "https://jackz070.github.io/ecommerce-product-page-main/",
+    githubLink: "https://github.com/jackz070/ecommerce-product-page-main",
     description:
-      "Product page for a sneaker. User can browse product images in the main view or in a larger modal, add chosen amount of items to the cart and remove cart items.",
+      "Product page for a pair of sneakers. User can browse product images in the main view or in a larger modal, add chosen amount of items to the cart and remove cart items.",
   },
 ];
