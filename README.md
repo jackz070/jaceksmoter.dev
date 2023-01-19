@@ -1,1 +1,1 @@
-Live version sits at: https://fanciful-tarsier-71d3af.netlify.app/
+Live version sits at: https://dev.jaceksmoter.com/
