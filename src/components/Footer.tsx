@@ -31,7 +31,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.2 }}
           >
-            For more Megan the dog
+            For more Megan the dog&nbsp;
             <a onClick={() => setMegan(!megan)}>
               click here! {darkMode ? "🦮" : "🐕‍🦺"}
             </a>
