@@ -8,7 +8,7 @@ const marqueeVariants = {
       x: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 20,
+        duration: 25,
         ease: "linear",
       },
     },
@@ -20,10 +20,10 @@ const ScrollingMarquee = ({ text }: { text: string }) => {
 
   return (
     <div
-      className={`sm:h-16 h-8  w-[100vw] overflow-hidden sticky top-10 z-30 bg-myWhite mb-6 flex items-center`}
+      className={`h-14  w-[100vw] overflow-hidden sticky top-10 z-30 bg-myWhite mb-6 flex items-center`}
     >
       <motion.h2
-        className="ml-12 md:text-2xl text-xl uppercase whitespace-nowrap font-mono text-myBlack"
+        className="ml-12 text-2xl uppercase whitespace-nowrap font-mono text-myBlack"
         variants={marqueeVariants}
         animate="animate"
       >

@@ -39,12 +39,12 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           ))}
         </div>
         <motion.div
-          className={`text-myBlack flex justify-between my-1 w-[75%] mx-auto`}
+          className={`text-myBlack flex justify-between my-1 w-fit gap-2 `}
         >
-          <motion.a href={liveLink} target="_blank" className={``}>
+          <motion.a href={liveLink} target="_blank" className={`font-sans font-bold`}>
             Live site
-          </motion.a>
-          <motion.a href={githubLink} target="_blank" className={``}>
+          </motion.a>|
+          <motion.a href={githubLink} target="_blank" className={`font-sans font-bold`}>
             Github repo
           </motion.a>
         </motion.div>
