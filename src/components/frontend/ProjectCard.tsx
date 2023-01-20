@@ -35,7 +35,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         </motion.h2>
         <div className="flex w-full flex-wrap ">
           {tech.map((tech) => (
-            <Tech tech={tech} />
+            <Tech tech={tech} key={tech} />
           ))}
         </div>
         <motion.div

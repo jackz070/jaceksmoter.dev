@@ -15,7 +15,7 @@ const FrontendDeveloper = () => {
       >
         <div className=" grid md:grid-cols-2 grid-cols-1 gap-4">
           {projects.map((project) => (
-            <ProjectCard project={project} />
+            <ProjectCard project={project} key={project.title} />
           ))}
         </div>
       </motion.div>
