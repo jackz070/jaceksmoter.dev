@@ -30,11 +30,11 @@ export const projects = [
       "/jaceksmoter.com/mobile-jaceksmotercom-1.png",
       "/jaceksmoter.com/mobile-jaceksmotercom-2.png",
     ],
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["Astro", "HTML", "CSS", "JavaScript"],
     liveLink: "https://www.jaceksmoter.com/",
-    githubLink: "https://github.com/jackz070/jaceksmoter.com",
+    githubLink: "https://github.com/jackz070/jaceksmoter.com-astro",
     description:
-      "My photography portfolio website. Challenges included coming up with consistent, minimal, monochrome design and performant display of high resolution image files and adapting the design for mobile devices.",
+      "My photography portfolio website. Challenges included coming up with consistent, minimal, monochrome design and performant display of high resolution image files and adapting the design for mobile devices. Recently migrated to Astro.build with minor updates.",
   },
   {
     title: "This website",
