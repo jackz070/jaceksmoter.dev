@@ -34,7 +34,7 @@ export const projects = [
     liveLink: "https://www.jaceksmoter.com/",
     githubLink: "https://github.com/jackz070/jaceksmoter.com-astro",
     description:
-      "My photography portfolio website. Challenges included coming up with consistent, minimal, monochrome design and performant display of high resolution image files and adapting the design for mobile devices. Recently migrated to Astro.build with minor updates.",
+      "My photography portfolio website. Challenges included coming up with consistent, minimal, monochrome design and performant display of high resolution image files and adapting the design for mobile devices. Recently migrated to Astro.build, which is a tool I've wanted to learn for a long time.",
   },
   {
     title: "This website",
@@ -47,8 +47,20 @@ export const projects = [
     liveLink: "https://dev.jaceksmoter.com/",
     githubLink: "https://github.com/jackz070/jaceksmoter.dev",
     description:
-      "A website that I've created to share some information about myself, showcase some of my projects and provide a handful of ways to contact me. One of the most important features are dog pictures. Can you find them?",
-  },
+      "A website that I've created to share some information about myself, showcase some of my projects and provide a handful of ways to contact me. Also an opportunity to learn framer-motion animation library. One of the most important features of the site are dog pictures. Can you find them?",
+  },  
+  {
+    title: "Multistep form",
+    images: [
+      "/multistep/gif-multistepBooking.gif",
+      "/multistep/mobile-multistep.png",
+    ],
+    tech: ["TypeScript", "React", "TailwindCSS", "HTML", "Vitest"],
+    liveLink: "https://regal-dango-7e1dfe.netlify.app/",
+    githubLink: "https://github.com/jackz070/bookingMultistep",
+    description:
+      "A multistep form with validation for booking a bus seat. First approached with react-hook-form, but halfway through I've decided that I actually prefer to implement all the data-storing and validation functionality myself because the library made it almost too easy. Was fun to find out how crucial form functions work behind the scenes.",
+  }, 
   {
     title: "QuickTODO",
     images: ["/quickTODO/gif-quickTODO.gif", "/quickTODO/mobile-quickTODO.png"],
@@ -87,8 +99,9 @@ export const projects = [
     liveLink: "https://fastidious-cat-04476b.netlify.app/",
     githubLink: "https://github.com/jackz070/countries-rest-api",
     description:
-      "App uses Countries REST API to allow searching through all the countries, filtering them by geographical region. It features unit / integration tests written with Jest / RTL and E2E tests in Cypress.",
+      "App uses Countries REST API to allow searching through all the countries, filtering them by geographical region. The project is a Frontend Mentor challenge, so the functionality and UI reflect provided specification. It features unit / integration tests written with Jest / RTL and E2E tests in Cypress.",
   },
+ 
   {
     title: "Product page",
     images: [
