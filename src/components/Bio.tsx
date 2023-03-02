@@ -14,9 +14,28 @@ const Bio = () => {
         className={`max-w-2xl sm:mx-auto mx-6 text-xl tracking-wide sm:leading-9 leading-8 font-sans mb-12 text-myBlack font-light`}
       >
         <p className="mb-6">
-          Having got my Masters in International Relations / Strategic Studies &
-          History and Culture of Jews in Poland I’ve worked for 2,5 years in
-          mental health area, at a self-help Clubhouse following the &nbsp;
+          I’ve started studying to become a front-end developer in 2022. First
+          I’ve learnt HTML & CSS and then moved to JavaScript, React and
+          TypeScript. I’m also paying a lot of attention to software testing,
+          both in theory and practice. Big focus for me are the testing tools
+          that allow me to test my code: Cypress, Jest, Vitest, React Testing
+          Library. Right now I’m expanding all those skills by taking courses,
+          making some open source contributions and building by own projects, a
+          selection of which you can find above.{" "}
+        </p>
+        <p className="mb-6">
+          What I love about software development is feeling the impact it can
+          make, how it may respond to the needs of others and improve their
+          lives. So far, the projects I’m really happy about are my two
+          portfolio websites (photography and web development) that I’ve
+          designed and built from scratch. They help me to reach out with my
+          creations, which makes a world of difference to me!
+        </p>
+        <p className="mb-6">
+          How did I get here? Having got my Masters in International Relations /
+          Strategic Studies & History and Culture of Jews in Poland I’ve worked
+          for 2,5 years in mental health area, at a self-help Clubhouse that
+          follows the &nbsp;
           <a
             href="https://clubhouse-intl.org/"
             target="_blank"
@@ -40,14 +59,6 @@ const Bio = () => {
             becoming a software developer.
           </p>
         </div>
-        <p>
-          I’ve started learning at the beginning of 2022 with HTML & CSS and
-          moved to JavaScript and React some months later. You can find my
-          projects big & small above, but one I’m most happy about so far is a
-          simple photography portfolio webpage that I’ve designed & created to
-          display my work. It’s so good to feel the impact coding can make, how
-          important the result may be to people if it responds to their needs.
-        </p>
       </div>
     </section>
   );
