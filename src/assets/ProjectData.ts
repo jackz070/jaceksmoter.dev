@@ -1,6 +1,5 @@
 export const projects = [
   {
-    // TODO setup image structure and integrate it with gallery component
     title: "Pokemon App",
     images: [
       "/pokeapp3/gif-pokeapp-1.gif",
@@ -12,6 +11,7 @@ export const projects = [
     tech: [
       "React",
       "React-query",
+      "Typescript",
       "Tailwindcss",
       "CSS",
       "HTML",
@@ -21,7 +21,7 @@ export const projects = [
     liveLink: "https://radiant-choux-0a80ea.netlify.app/",
     githubLink: "https://github.com/jackz070/pokeapp3",
     description:
-      "This app uses react-query to display list of all Pokemon fetching details only when needed / in view. List can be searched by name & filtered by type, user can mark Pokemon as caught to create a collection. There's also Auth0 authentication, dark mode (with a cute switch I've built), toast notifications.",
+      "This app uses react-query to display list of all Pokemon fetching details only when needed / in view. List can be searched by name & filtered by type, user can mark Pokemon as caught to create a collection. There's also Auth0 authentication (login with Google), dark mode (with a cute switch I've built), toast notifications. Now all in TypeScript.",
   },
   {
     title: "jaceksmoter.com",
