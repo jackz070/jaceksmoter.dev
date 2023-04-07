@@ -48,7 +48,7 @@ export const projects = [
     githubLink: "https://github.com/jackz070/jaceksmoter.dev",
     description:
       "A website that I've created to share some information about myself, showcase some of my projects and provide a handful of ways to contact me. Also an opportunity to learn framer-motion animation library. One of the most important features of the site are dog pictures. Can you find them?",
-  },  
+  },
   {
     title: "Multistep form",
     images: [
@@ -60,7 +60,19 @@ export const projects = [
     githubLink: "https://github.com/jackz070/bookingMultistep",
     description:
       "A multistep form with validation for booking a bus seat. First approached with react-hook-form, but halfway through I've decided that I actually prefer to implement all the data-storing and validation functionality myself because the library made it almost too easy. Was fun to find out how crucial form functions work behind the scenes.",
-  }, 
+  },
+  {
+    title: "MusicStats",
+    images: [
+      "/MusicStats/gif-musicstats-1.gif",
+      "/MusicStats/mobile-musicStats.png",
+    ],
+    tech: ["React", "TypeScript", "SASS", "HTML", "Framer Motion"],
+    liveLink: "https://github.com/jackz070/MusicStats",
+    githubLink: "https://github.com/jackz070/MusicStats",
+    description:
+      "This app utilizes Spotify Web API to display info about users favourite tracks, artists and genres, and also provides recommendations based on that data. User can like tracks and remove them from likes. The app follows Spotify Development Guidelines, but still awaits acceptance to move out of development mode. Because of this there is no live version as of yet.",
+  },
   {
     title: "QuickTODO",
     images: ["/quickTODO/gif-quickTODO.gif", "/quickTODO/mobile-quickTODO.png"],
@@ -101,7 +113,7 @@ export const projects = [
     description:
       "App uses Countries REST API to allow searching through all the countries, filtering them by geographical region. The project is a Frontend Mentor challenge, so the functionality and UI reflect provided specification. It features unit / integration tests written with Jest / RTL and E2E tests in Cypress.",
   },
- 
+
   {
     title: "Product page",
     images: [

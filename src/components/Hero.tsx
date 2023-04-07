@@ -75,9 +75,18 @@ const Hero = () => {
                   ? "text-dynamicXL"
                   : "text-[1.6rem] fixed top-0 z-50 font-sans"
               }`}
-              initial={{ x: -1200 }}
-              animate={{ x: 0 }}
-              transition={{ duration: 1.2, delay: 0.2, type: "spring" }}
+              initial={{
+                x: -1000,
+                filter: "blur(10px)",
+                transform: "scale(1.2)",
+              }}
+              animate={{ x: 0, filter: "blur(0px)", transform: "scale(1)" }}
+              transition={{
+                duration: 2.9,
+                delay: 0.3,
+                type: "spring",
+                stiffness: 35,
+              }}
               style={{ transition: "font-size 0.5s" }}
             >
               Jacek Smoter
