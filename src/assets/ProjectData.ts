@@ -71,7 +71,7 @@ export const projects = [
     liveLink: "https://github.com/jackz070/MusicStats",
     githubLink: "https://github.com/jackz070/MusicStats",
     description:
-      "This app utilizes Spotify Web API to display info about users favourite tracks, artists and genres, and also provides recommendations based on that data. User can like tracks and remove them from likes. The app follows Spotify Development Guidelines, but still awaits acceptance to move out of development mode. Because of this there is no live version as of yet.",
+      "This app utilizes Spotify Web API to display info about users favourite tracks, artists and genres, and also provides recommendations based on that data. User can play previews of tracks, like and unlike them. The app follows Spotify Development Guidelines, but still awaits acceptance to move out of development mode. Because of this there is no live version as of yet.",
   },
   {
     title: "QuickTODO",
