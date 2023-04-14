@@ -17,11 +17,26 @@ export const projects = [
       "HTML",
       "React Router",
       "Auth0",
+      "Cypress",
+      "REST API",
     ],
     liveLink: "https://radiant-choux-0a80ea.netlify.app/",
     githubLink: "https://github.com/jackz070/pokeapp3",
     description:
-      "This app uses react-query to display list of all Pokemon fetching details only when needed / in view. List can be searched by name & filtered by type, user can mark Pokemon as caught to create a collection. There's also Auth0 authentication (login with Google), dark mode (with a cute switch I've built), toast notifications. Now all in TypeScript.",
+      "This app uses react-query to display list of all Pokemon fetching details only when needed / in view. List can be searched by name & filtered by type, user can mark Pokemon as caught to create a collection. There's also Auth0 authentication (login with Google), dark mode (with a cute switch I've built), toast notifications. Now all in TypeScript. E2E testing with Cypress.",
+  },
+  {
+    title: "MusicStats",
+    images: [
+      "/MusicStats/gif-musicstats-1.gif",
+      "/MusicStats/gif-musicstats-2.gif",
+      "/MusicStats/mobile-musicStats.png",
+    ],
+    tech: ["React", "TypeScript", "SASS", "HTML", "Framer Motion", "REST API"],
+    liveLink: "https://github.com/jackz070/MusicStats",
+    githubLink: "https://github.com/jackz070/MusicStats",
+    description:
+      "This app utilizes Spotify Web API to display info about users favourite tracks, artists and genres. It provides recommendations based on that data. User can play previews of tracks, add them to playlists (including creating new ones!), like and unlike them. The app follows Spotify Development Guidelines, but still awaits acceptance to move out of development mode. Because of this there is no live version as of yet.",
   },
   {
     title: "jaceksmoter.com",
@@ -61,18 +76,7 @@ export const projects = [
     description:
       "A multistep form with validation for booking a bus seat. First approached with react-hook-form, but halfway through I've decided that I actually prefer to implement all the data-storing and validation functionality myself because the library made it almost too easy. Was fun to find out how crucial form functions work behind the scenes.",
   },
-  {
-    title: "MusicStats",
-    images: [
-      "/MusicStats/gif-musicstats-1.gif",
-      "/MusicStats/mobile-musicStats.png",
-    ],
-    tech: ["React", "TypeScript", "SASS", "HTML", "Framer Motion"],
-    liveLink: "https://github.com/jackz070/MusicStats",
-    githubLink: "https://github.com/jackz070/MusicStats",
-    description:
-      "This app utilizes Spotify Web API to display info about users favourite tracks, artists and genres, and also provides recommendations based on that data. User can play previews of tracks, like and unlike them. The app follows Spotify Development Guidelines, but still awaits acceptance to move out of development mode. Because of this there is no live version as of yet.",
-  },
+
   {
     title: "QuickTODO",
     images: ["/quickTODO/gif-quickTODO.gif", "/quickTODO/mobile-quickTODO.png"],
@@ -107,6 +111,7 @@ export const projects = [
       "React Testing Library",
       "React Router",
       "React Query",
+      "REST API",
     ],
     liveLink: "https://fastidious-cat-04476b.netlify.app/",
     githubLink: "https://github.com/jackz070/countries-rest-api",

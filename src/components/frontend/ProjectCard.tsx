@@ -20,7 +20,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { title, images, tech, liveLink, githubLink, description } = project;
 
   return (
-    <div className="flex justify-center mt-[11.5rem] h-[360px] ">
+    <div className="flex justify-center mt-[11.5rem] h-[380px] ">
       <motion.div layout className={` p-4 rounded-lg w-96   mb-8 `}>
         <div className="">
           <ProjectCardImageGallery images={images} />
@@ -41,10 +41,19 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         <motion.div
           className={`text-myBlack flex justify-between my-1 w-fit gap-2 `}
         >
-          <motion.a href={liveLink} target="_blank" className={`font-sans font-bold`}>
+          <motion.a
+            href={liveLink}
+            target="_blank"
+            className={`font-sans font-bold`}
+          >
             Live site
-          </motion.a>|
-          <motion.a href={githubLink} target="_blank" className={`font-sans font-bold`}>
+          </motion.a>
+          |
+          <motion.a
+            href={githubLink}
+            target="_blank"
+            className={`font-sans font-bold`}
+          >
             Github repo
           </motion.a>
         </motion.div>
