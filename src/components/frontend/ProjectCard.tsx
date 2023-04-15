@@ -20,7 +20,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { title, images, tech, liveLink, githubLink, description } = project;
 
   return (
-    <div className="flex justify-center mt-[11.5rem] h-[380px] ">
+    <div className="flex justify-center  mb-4 ">
       <motion.div layout className={` p-4 rounded-lg w-96   mb-8 `}>
         <div className="">
           <ProjectCardImageGallery images={images} />

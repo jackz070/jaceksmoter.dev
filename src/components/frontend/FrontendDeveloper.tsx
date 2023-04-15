@@ -8,7 +8,7 @@ const FrontendDeveloper = () => {
     <section id="projects">
       <ScrollingMarquee text={"Projects"} />
       <motion.div
-        className="max-w-4xl mx-auto mb-4"
+        className="max-w-4xl mx-auto"
         initial={{ y: 200 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
