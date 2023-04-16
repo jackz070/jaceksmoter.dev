@@ -16,8 +16,6 @@ const ContactSidebar = () => {
   const [showSideContacts, setShowSideContacts] = useState(false);
 
   useLayoutEffect(() => {
-    console.log(scrollPosition);
-
     if (!isMobile) {
       window.addEventListener("scroll", handleScroll, {
         passive: true,

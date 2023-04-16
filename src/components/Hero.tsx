@@ -63,6 +63,8 @@ const Hero = () => {
             style={{
               transform: helloIsInView ? "none" : "translateX(-200px) ",
             }}
+            initial={{ filter: "blur(4px)" }}
+            animate={{ filter: "blur(0px)" }}
             transition={{ type: "spring" }}
           >
             Hello, my name is
@@ -77,7 +79,7 @@ const Hero = () => {
               initial={{
                 x: -1000,
                 filter: "blur(10px)",
-                transform: "scale(1.2)",
+                transform: "scale(1.1)",
               }}
               animate={{ x: 0, filter: "blur(0px)", transform: "scale(1)" }}
               transition={{
