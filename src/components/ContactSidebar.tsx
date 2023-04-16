@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { socialLinks } from "../assets/socialLinks";
 
@@ -15,12 +15,14 @@ const ContactSidebar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showSideContacts, setShowSideContacts] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    console.log(scrollPosition);
+
     if (!isMobile) {
       window.addEventListener("scroll", handleScroll, {
         passive: true,
       });
-      scrollPosition >= 340
+      scrollPosition >= 460
         ? setShowSideContacts(true)
         : setShowSideContacts(false);
       return () => {

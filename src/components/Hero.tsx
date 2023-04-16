@@ -12,7 +12,7 @@ const Hero = () => {
   const helloRef = useRef(null);
   const helloIsInView = useInView(helloRef, {
     margin:
-      isMobile && isLandscape
+      (isMobile && isLandscape) || window.innerHeight <= 605
         ? "-90px 0px 0px 0px"
         : isMobile
         ? "-160px 0px 0px 0px"
@@ -22,7 +22,7 @@ const Hero = () => {
   const iAmRef = useRef(null);
   const iAmIsInView = useInView(iAmRef, {
     margin:
-      isMobile && isLandscape
+      (isMobile && isLandscape) || window.innerHeight <= 605
         ? "-180px 0px 0px 0px"
         : isMobile
         ? "-180px 0px 0px 0px"
@@ -32,7 +32,7 @@ const Hero = () => {
   const nameRef = useRef(null);
   const nameIsInView = useInView(nameRef, {
     margin:
-      isMobile && isLandscape
+      (isMobile && isLandscape) || window.innerHeight <= 605
         ? "-100px 0px 0px 0px"
         : isMobile
         ? "-160px 0px 0px 0px"
@@ -42,7 +42,7 @@ const Hero = () => {
   const contactRef = useRef(null);
   const contactInfoInView = useInView(contactRef, {
     margin:
-      isMobile && isLandscape
+      (isMobile && isLandscape) || window.innerHeight <= 605
         ? "-200px 0px 0px 0px"
         : isMobile
         ? "-380px 0px 0px 0px"
