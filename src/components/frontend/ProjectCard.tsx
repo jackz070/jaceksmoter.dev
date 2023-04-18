@@ -20,7 +20,16 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { title, images, tech, liveLink, githubLink, description } = project;
 
   return (
-    <div className="flex justify-center  mb-4 ">
+    <motion.div
+      className="flex justify-center  mb-4 "
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true }}
+      onHoverStart={() => {
+        images.forEach((image) => (new Image().src = image));
+      }}
+    >
       <motion.div layout className={` p-4 rounded-lg w-96   mb-8 `}>
         <div className="">
           <ProjectCardImageGallery images={images} />
@@ -59,7 +68,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         </motion.div>
         <div className="text-myBlack">{description}</div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
