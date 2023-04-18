@@ -18,7 +18,9 @@ const Hero = () => {
         ? "-160px 0px 0px 0px"
         : "-200px 0px 0px 0px",
   });
-
+  // Animation easing idea: cubic-bezier(.645,.045,.355,1);
+  // TODO load all images for a project on card inView
+  // change marquees to serif headers (animated flying in) - just make all the site shorter
   const iAmRef = useRef(null);
   const iAmIsInView = useInView(iAmRef, {
     margin:
