@@ -76,6 +76,15 @@ export const projects = [
     description:
       "A multistep form with validation for booking a bus seat. First approached with react-hook-form, but halfway through I've decided that I actually prefer to implement all the data-storing and validation functionality myself because the library made it almost too easy. Was fun to find out how crucial form functions work behind the scenes.",
   },
+  {
+    title: "Linear copy",
+    images: ["/linear/webm-linear.webm", "/linear/webm-linear-2.webm"],
+    tech: ["Next.js", "TypeScript", "Tailwindcss", "CSS", "HTML"],
+    liveLink: "https://exquisite-chaja-3633de.netlify.app/",
+    githubLink: "https://github.com/jackz070/linear-copy",
+    description:
+      "Recreation of Linear's beautiful website. Based on tutorial from @frontendfyi on YT with my own improvements. It was a great project to learn more about CSS animations, Tailwind and reusable compound components.",
+  },
 
   {
     title: "QuickTODO",
@@ -119,17 +128,17 @@ export const projects = [
       "App uses Countries REST API to allow searching through all the countries, filtering them by geographical region. The project is a Frontend Mentor challenge, so the functionality and UI reflect provided specification. It features unit / integration tests written with Jest / RTL and E2E tests in Cypress.",
   },
 
-  {
-    title: "Product page",
-    images: [
-      "/productPage/gif-ecommerceProduct.gif",
-      "/productPage/mobile-ecommerceProduct-1.png",
-      "/productPage/mobile-ecommerceProduct-2.png",
-    ],
-    tech: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://jackz070.github.io/ecommerce-product-page-main/",
-    githubLink: "https://github.com/jackz070/ecommerce-product-page-main",
-    description:
-      "Product page for a pair of sneakers. User can browse product images in the main view or in a larger modal, add chosen amount of items to the cart and remove cart items.",
-  },
+  // {
+  //   title: "Product page",
+  //   images: [
+  //     "/productPage/gif-ecommerceProduct.gif",
+  //     "/productPage/mobile-ecommerceProduct-1.png",
+  //     "/productPage/mobile-ecommerceProduct-2.png",
+  //   ],
+  //   tech: ["HTML", "CSS", "JavaScript"],
+  //   liveLink: "https://jackz070.github.io/ecommerce-product-page-main/",
+  //   githubLink: "https://github.com/jackz070/ecommerce-product-page-main",
+  //   description:
+  //     "Product page for a pair of sneakers. User can browse product images in the main view or in a larger modal, add chosen amount of items to the cart and remove cart items.",
+  // },
 ];

@@ -111,36 +111,74 @@ const ProjectCardImageGalleryModal = ({
       >
         <GoTriangleLeft size={"2rem"} />
       </motion.button>
-      <motion.img
-        layout
-        className={`w-auto h-[400px] fixed object-contain z-50 ${
-          isOpen ? "" : ""
-        }`}
-        key={page}
-        src={images[imageIndex]}
-        custom={direction}
-        variants={variants}
-        initial="enter"
-        animate="center"
-        exit="exit"
-        transition={{
-          x: { type: "spring", stiffness: 300, damping: 30 },
-          opacity: { duration: 0.4 },
-          duration: 0.3,
-        }}
-        drag="x"
-        dragConstraints={{ left: 0, right: 0 }}
-        dragElastic={1}
-        onDragEnd={(e, { offset, velocity }) => {
-          const swipe = swipePower(offset.x, velocity.x);
+      {(images[imageIndex].slice(-4) === ".png" ||
+        images[imageIndex].slice(-4) === ".gif") && (
+        <motion.img
+          layout
+          className={`w-auto h-[400px] fixed object-contain z-50 ${
+            isOpen ? "" : ""
+          }`}
+          key={page}
+          src={images[imageIndex]}
+          custom={direction}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30 },
+            opacity: { duration: 0.4 },
+            duration: 0.3,
+          }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={1}
+          onDragEnd={(e, { offset, velocity }) => {
+            const swipe = swipePower(offset.x, velocity.x);
 
-          if (swipe < -swipeConfidenceThreshold) {
-            paginate(1);
-          } else if (swipe > swipeConfidenceThreshold) {
-            paginate(-1);
-          }
-        }}
-      />{" "}
+            if (swipe < -swipeConfidenceThreshold) {
+              paginate(1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              paginate(-1);
+            }
+          }}
+        />
+      )}
+      {images[imageIndex].slice(-4) === "webm" && (
+        <motion.video
+          autoPlay
+          muted
+          layout
+          className={`w-auto h-[400px] fixed object-contain z-50 ${
+            isOpen ? "" : ""
+          }`}
+          key={page}
+          custom={direction}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30 },
+            opacity: { duration: 0.4 },
+            duration: 0.4,
+          }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={1}
+          onDragEnd={(e, { offset, velocity }) => {
+            const swipe = swipePower(offset.x, velocity.x);
+
+            if (swipe < -swipeConfidenceThreshold) {
+              paginate(1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              paginate(-1);
+            }
+          }}
+        >
+          <source src={images[imageIndex]} />
+        </motion.video>
+      )}
       <motion.button
         onClick={(e) => {
           e.stopPropagation();
