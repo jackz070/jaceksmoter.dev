@@ -102,6 +102,7 @@ export const ProjectCardImageGallery: React.FC<{
         {images[imageIndex].slice(-4) === "webm" && (
           <motion.video
             autoPlay
+            loop
             muted
             layout
             className={`w-[352px] h-[199.75px]  object-contain -z-10 ${

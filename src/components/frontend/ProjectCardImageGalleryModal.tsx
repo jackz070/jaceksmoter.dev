@@ -147,6 +147,7 @@ const ProjectCardImageGalleryModal = ({
       {images[imageIndex].slice(-4) === "webm" && (
         <motion.video
           autoPlay
+          loop
           muted
           layout
           className={`w-auto h-[400px] fixed object-contain z-50 ${
