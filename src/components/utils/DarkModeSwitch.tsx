@@ -1,7 +1,7 @@
 import { useDarkMode } from "../../context/DarkModeContext";
 import { HiMoon } from "@react-icons/all-files/hi/HiMoon";
 import { GiPlainCircle } from "@react-icons/all-files/gi/GiPlainCircle";
-import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const DarkModeSwitch = () => {
   const { darkMode, setDarkMode } = useDarkMode();
@@ -11,13 +11,13 @@ const DarkModeSwitch = () => {
       localStorage.theme = "light";
       setTimeout(() => {
         document.body.classList.remove("dark");
-      }, 170);
+      }, 40);
     } else {
       setDarkMode(true);
       localStorage.theme = "dark";
       setTimeout(() => {
         document.body.classList.add("dark");
-      }, 170);
+      }, 40);
     }
   };
 

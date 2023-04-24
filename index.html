@@ -2,21 +2,25 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-38ZDCE4FC6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-38ZDCE4FC6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-38ZDCE4FC6');
-</script>
+      gtag("config", "G-38ZDCE4FC6");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacek Smoter - front-end developer</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +32,8 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Domine:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-
+  </head>
+  <body>
     <script>
       function setDarkMode() {
         if (
@@ -45,9 +50,8 @@
           localStorage.setItem("theme", "light");
         }
       }
+      setDarkMode();
     </script>
-  </head>
-  <body onLoad="setDarkMode()">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
