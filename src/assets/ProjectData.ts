@@ -54,7 +54,7 @@ export const projects = [
   {
     title: "This website",
     images: [
-      "/jaceksmoterdev/gif-jaceksmoterdev-1.gif",
+      "/jaceksmoterdev/webm-jaceksmoterdev.webm",
       "/jaceksmoterdev/mobile-jaceksmoterdev-1.png",
       "/jaceksmoterdev/mobile-jaceksmoterdev-2.png",
     ],
