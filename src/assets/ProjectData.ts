@@ -34,12 +34,12 @@ export const projects = [
   {
     title: "MusicStats",
     imagesSm: [
-      "/MusicStats/gif-musicstats-1.gif",
+      "/MusicStats/mp4-musicstats-1-small.mp4",
       "/MusicStats/gif-musicstats-2.gif",
       "/MusicStats/mobile-musicStats.png",
     ],
     imagesLg: [
-      "/MusicStats/gif-musicstats-1.gif",
+      "/MusicStats/mp4-musicstats-1-large.mp4",
       "/MusicStats/gif-musicstats-2.gif",
       "/MusicStats/mobile-musicStats.png",
     ],
