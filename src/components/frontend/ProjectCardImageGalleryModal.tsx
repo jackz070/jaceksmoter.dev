@@ -144,13 +144,14 @@ const ProjectCardImageGalleryModal = ({
           }}
         />
       )}
-      {images[imageIndex].slice(-4) === "webm" && (
+      {(images[imageIndex].slice(-4) === "webm" ||
+        images[imageIndex].slice(-4) === ".mp4") && (
         <motion.video
           autoPlay
           loop
           muted
           layout
-          className={`w-auto h-[400px] fixed object-contain z-50 ${
+          className={`w-auto h-[450px] fixed object-contain z-50 ${
             isOpen ? "" : ""
           }`}
           key={page}

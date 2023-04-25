@@ -1,9 +1,15 @@
 export const projects = [
   {
     title: "Pokemon App",
-    images: [
-      "/pokeapp3/gif-pokeapp-1.gif",
-      "/pokeapp3/gif-pokeapp-2.gif",
+    imagesSm: [
+      "/pokeapp3/mp4-pokeapp-1-small.mp4",
+      "/pokeapp3/mp4-pokeapp-2-small.mp4",
+      "/pokeapp3/mobile-pokeapp-1.png",
+      "/pokeapp3/mobile-pokeapp-2.png",
+    ],
+    imagesLg: [
+      "/pokeapp3/mp4-pokeapp-1-large.mp4",
+      "/pokeapp3/mp4-pokeapp-2-large.mp4",
       "/pokeapp3/mobile-pokeapp-1.png",
       "/pokeapp3/mobile-pokeapp-2.png",
     ],
@@ -27,7 +33,12 @@ export const projects = [
   },
   {
     title: "MusicStats",
-    images: [
+    imagesSm: [
+      "/MusicStats/gif-musicstats-1.gif",
+      "/MusicStats/gif-musicstats-2.gif",
+      "/MusicStats/mobile-musicStats.png",
+    ],
+    imagesLg: [
       "/MusicStats/gif-musicstats-1.gif",
       "/MusicStats/gif-musicstats-2.gif",
       "/MusicStats/mobile-musicStats.png",
@@ -40,8 +51,13 @@ export const projects = [
   },
   {
     title: "jaceksmoter.com",
-    images: [
-      "/jaceksmoter.com/webm-jaceksmotercom.webm",
+    imagesSm: [
+      "/jaceksmoter.com/mp4-jaceksmotercom-small.mp4",
+      "/jaceksmoter.com/mobile-jaceksmotercom-1.png",
+      "/jaceksmoter.com/mobile-jaceksmotercom-2.png",
+    ],
+    imagesLg: [
+      "/jaceksmoter.com/mp4-jaceksmotercom-large.mp4",
       "/jaceksmoter.com/mobile-jaceksmotercom-1.png",
       "/jaceksmoter.com/mobile-jaceksmotercom-2.png",
     ],
@@ -53,8 +69,13 @@ export const projects = [
   },
   {
     title: "This website",
-    images: [
-      "/jaceksmoterdev/webm-jaceksmoterdev.webm",
+    imagesSm: [
+      "/jaceksmoterdev/mp4-jaceksmoterdev-1-small.mp4",
+      "/jaceksmoterdev/mobile-jaceksmoterdev-1.png",
+      "/jaceksmoterdev/mobile-jaceksmoterdev-2.png",
+    ],
+    imagesLg: [
+      "/jaceksmoterdev/mp4-jaceksmoterdev-1-large.mp4",
       "/jaceksmoterdev/mobile-jaceksmoterdev-1.png",
       "/jaceksmoterdev/mobile-jaceksmoterdev-2.png",
     ],
@@ -66,7 +87,11 @@ export const projects = [
   },
   {
     title: "Multistep form",
-    images: [
+    imagesSm: [
+      "/multistep/gif-multistepBooking.gif",
+      "/multistep/mobile-multistep.png",
+    ],
+    imagesLg: [
       "/multistep/gif-multistepBooking.gif",
       "/multistep/mobile-multistep.png",
     ],
@@ -78,7 +103,14 @@ export const projects = [
   },
   {
     title: "Linear copy",
-    images: ["/linear/webm-linear.webm", "/linear/webm-linear-2.webm"],
+    imagesSm: [
+      "/linear/mp4-linear-small.mp4",
+      "/linear/mp4-linear-2-small.mp4",
+    ],
+    imagesLg: [
+      "/linear/mp4-linear-large.mp4",
+      "/linear/mp4-linear-2-large.mp4",
+    ],
     tech: ["Next.js", "TypeScript", "Tailwindcss", "CSS", "HTML"],
     liveLink: "https://exquisite-chaja-3633de.netlify.app/",
     githubLink: "https://github.com/jackz070/linear-copy",
@@ -88,7 +120,14 @@ export const projects = [
 
   {
     title: "QuickTODO",
-    images: ["/quickTODO/gif-quickTODO.gif", "/quickTODO/mobile-quickTODO.png"],
+    imagesSm: [
+      "/quickTODO/gif-quickTODO.gif",
+      "/quickTODO/mobile-quickTODO.png",
+    ],
+    imagesLg: [
+      "/quickTODO/gif-quickTODO.gif",
+      "/quickTODO/mobile-quickTODO.png",
+    ],
     tech: [
       "React",
       "TypeScript",
@@ -106,7 +145,12 @@ export const projects = [
 
   {
     title: "Country App",
-    images: [
+    imagesSm: [
+      "/countryapp/gif-countries.gif",
+      "/countryapp/mobile-countries-1.png",
+      "/countryapp/mobile-countries-2.png",
+    ],
+    imagesLg: [
       "/countryapp/gif-countries.gif",
       "/countryapp/mobile-countries-1.png",
       "/countryapp/mobile-countries-2.png",
@@ -130,7 +174,7 @@ export const projects = [
 
   // {
   //   title: "Product page",
-  //   images: [
+  //   imagesSm: [
   //     "/productPage/gif-ecommerceProduct.gif",
   //     "/productPage/mobile-ecommerceProduct-1.png",
   //     "/productPage/mobile-ecommerceProduct-2.png",

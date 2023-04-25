@@ -34,12 +34,13 @@ const swipePower = (offset: number, velocity: number) => {
 };
 
 export const ProjectCardImageGallery: React.FC<{
-  images: string[];
-}> = ({ images }) => {
+  imagesSm: string[];
+  imagesLg: string[];
+}> = ({ imagesSm, imagesLg }) => {
   const [[page, direction], setPage] = useState([0, 0]);
   const [isOpen, setIsOpen] = useState(false);
 
-  const imageIndex = wrap(0, images.length, page);
+  const imageIndex = wrap(0, imagesSm.length, page);
 
   const paginate = (newDirection: number) => {
     setPage([page + newDirection, newDirection]);
@@ -51,7 +52,7 @@ export const ProjectCardImageGallery: React.FC<{
         onClick={(e) => {
           setIsOpen(true);
         }}
-        className={`w-[352px] h-[199.75px] relative ${isOpen ? "" : ""}`}
+        className={`w-[352px] h-[200px] relative ${isOpen ? "" : ""}`}
       >
         <motion.button
           onClick={(e) => {
@@ -59,21 +60,21 @@ export const ProjectCardImageGallery: React.FC<{
 
             paginate(-1);
           }}
-          className="text-xl bg-black h-8 w-8 text-white absolute z-10 top-[calc(50%-1rem)] flex justify-center items-center  rounded-md m-1"
+          className="text-xl bg-black h-8 w-8 text-white absolute z-10 top-[calc(50%-1rem)] flex justify-center items-center rounded-md m-1 "
           whileTap={{ scale: 0.9 }}
         >
           <GoTriangleLeft />
         </motion.button>
 
-        {(images[imageIndex].slice(-4) === ".png" ||
-          images[imageIndex].slice(-4) === ".gif") && (
+        {(imagesSm[imageIndex].slice(-4) === ".png" ||
+          imagesSm[imageIndex].slice(-4) === ".gif") && (
           <motion.img
             layout
-            className={`w-[352px] h-[199.75px]  object-contain -z-10 ${
+            className={`w-[352px] h-[200px]  object-contain -z-10 cursor-pointer ${
               isOpen ? "" : ""
             }`}
             key={page}
-            src={images[imageIndex]}
+            src={imagesSm[imageIndex]}
             custom={direction}
             variants={variants}
             initial="enter"
@@ -99,13 +100,14 @@ export const ProjectCardImageGallery: React.FC<{
           />
         )}
 
-        {images[imageIndex].slice(-4) === "webm" && (
+        {(imagesSm[imageIndex].slice(-4) === "webm" ||
+          imagesSm[imageIndex].slice(-4) === ".mp4") && (
           <motion.video
             autoPlay
             loop
             muted
             layout
-            className={`w-[352px] h-[199.75px]  object-contain -z-10 ${
+            className={`w-[352px] h-[200px]  object-contain -z-10 cursor-pointer  ${
               isOpen ? "" : ""
             }`}
             key={page}
@@ -132,7 +134,7 @@ export const ProjectCardImageGallery: React.FC<{
               }
             }}
           >
-            <source src={images[imageIndex]} />
+            <source src={imagesSm[imageIndex]} />
           </motion.video>
         )}
         <motion.button
@@ -148,7 +150,7 @@ export const ProjectCardImageGallery: React.FC<{
         <AnimatePresence>
           {isOpen && (
             <ProjectCardImageGalleryModal
-              images={images}
+              images={imagesLg}
               setIsOpen={setIsOpen}
               isOpen={isOpen}
               page={page}

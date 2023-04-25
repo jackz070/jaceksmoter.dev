@@ -6,7 +6,8 @@ import { ProjectCardImageGallery } from "./ProjectCardImageGallery";
 interface Props {
   project: {
     title: string;
-    images: string[];
+    imagesSm: string[];
+    imagesLg: string[];
     tech: string[];
     liveLink: string;
     githubLink: string;
@@ -15,7 +16,8 @@ interface Props {
 }
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
-  const { title, images, tech, liveLink, githubLink, description } = project;
+  const { title, imagesSm, imagesLg, tech, liveLink, githubLink, description } =
+    project;
 
   return (
     <motion.div
@@ -25,12 +27,13 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       transition={{ duration: 0.4 }}
       viewport={{ once: true }}
       onHoverStart={() => {
-        images.forEach((image) => (new Image().src = image));
+        imagesSm.forEach((image) => (new Image().src = image));
+        imagesLg.forEach((image) => (new Image().src = image));
       }}
     >
       <motion.div layout className={`p-4 rounded-lg w-96 mb-8 `}>
         <div className="">
-          <ProjectCardImageGallery images={images} />
+          <ProjectCardImageGallery imagesSm={imagesSm} imagesLg={imagesLg} />
         </div>
         <div className="w-full bg-myBlack h-[2px] mt-2" />
 
