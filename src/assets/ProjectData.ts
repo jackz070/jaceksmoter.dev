@@ -66,6 +66,8 @@ export const projects = [
       "TypeScript",
       "MUI",
       "Framer Motion",
+      "Redux",
+      "RTQ",
       "Node.js",
       "Express",
       "MongoDB",
@@ -74,7 +76,7 @@ export const projects = [
     liveLink: "https://elegant-granita-3843f8.netlify.app/",
     githubLink: "https://github.com/jackz070/dashapp",
     description:
-      "A financial/ecommerce dashboard that displays data stored in a MongoDB database via Mongoose, Express and Node.js. UI is created with MUI and charts with Recharts. Customizing MUI theme with TypeScript is an experience to be remembered.",
+      "A financial/ecommerce dashboard that displays data stored in a MongoDB database via Mongoose, Express and Node.js. Includes simple settings page. UI is created with MUI and charts with Recharts. Customizing MUI theme with TypeScript is an experience to be remembered.",
   },
   {
     title: "jaceksmoter.com",
