@@ -50,6 +50,33 @@ export const projects = [
       "This app utilizes Spotify Web API to display info about users favourite tracks, artists and genres. It provides recommendations based on that data. User can play previews of tracks, add them to playlists (including creating new ones!), like and unlike them. The app follows Spotify Development Guidelines, but still awaits acceptance to move out of development mode. Because of this there is no live version as of yet.",
   },
   {
+    title: "DashApp",
+    imagesSm: [
+      "/dashapp/mp4-dashapp-small.mp4",
+      "/dashapp/mobile-dashapp-1.png",
+      "/dashapp/mobile-dashapp-2.png",
+    ],
+    imagesLg: [
+      "/dashapp/mp4-dashapp-large.mp4",
+      "/dashapp/mobile-dashapp-1.png",
+      "/dashapp/mobile-dashapp-2.png",
+    ],
+    tech: [
+      "React",
+      "TypeScript",
+      "MUI",
+      "Framer Motion",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST API",
+    ],
+    liveLink: "https://elegant-granita-3843f8.netlify.app/",
+    githubLink: "https://github.com/jackz070/dashapp",
+    description:
+      "A financial/ecommerce dashboard that displays data stored in a MongoDB database via Mongoose, Express and Node.js. UI is created with MUI and charts with Recharts. Customizing MUI theme with TypeScript is an experience to be remembered.",
+  },
+  {
     title: "jaceksmoter.com",
     imagesSm: [
       "/jaceksmoter.com/mp4-jaceksmotercom-small.mp4",
@@ -117,32 +144,6 @@ export const projects = [
     description:
       "Recreation of Linear's beautiful website. Based on tutorial from @frontendfyi on YT with my own improvements. It was a great project to learn more about CSS animations, Tailwind and reusable compound components.",
   },
-
-  {
-    title: "QuickTODO",
-    imagesSm: [
-      "/quickTODO/gif-quickTODO.gif",
-      "/quickTODO/mobile-quickTODO.png",
-    ],
-    imagesLg: [
-      "/quickTODO/gif-quickTODO.gif",
-      "/quickTODO/mobile-quickTODO.png",
-    ],
-    tech: [
-      "React",
-      "TypeScript",
-      "Tailwindcss",
-      "CSS",
-      "HTML",
-      "Vitest",
-      "React Testing Library",
-    ],
-    liveLink: "https://beautiful-fairy-ee9b71.netlify.app/",
-    githubLink: "https://github.com/jackz070/QuickTODO",
-    description:
-      "This simple todo app features drag and drop movement of items within lists and between them, ability to edit them, persistance with local storage. Part of the app operation is covered by tests written in Vitest / React Testing Library.",
-  },
-
   {
     title: "Country App",
     imagesSm: [
