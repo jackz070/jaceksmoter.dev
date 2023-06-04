@@ -50,7 +50,7 @@ export const projects = [
       "This app utilizes Spotify Web API to display info about users favourite tracks, artists and genres. It provides recommendations based on that data. User can play previews of tracks, add them to playlists (including creating new ones!), like and unlike them. The app follows Spotify Development Guidelines, but still awaits acceptance to move out of development mode. Because of this there is no live version as of yet.",
   },
   {
-    title: "DashApp",
+    title: "CRUD DashApp",
     imagesSm: [
       "/dashapp/mp4-dashapp-small.mp4",
       "/dashapp/mobile-dashapp-1.png",
@@ -76,7 +76,7 @@ export const projects = [
     liveLink: "https://elegant-granita-3843f8.netlify.app/",
     githubLink: "https://github.com/jackz070/dashapp",
     description:
-      "A financial/ecommerce dashboard that displays data stored in a MongoDB database via Mongoose, Express and Node.js. Includes simple settings page. UI is created with MUI and charts with Recharts. Customizing MUI theme with TypeScript is an experience to be remembered.",
+      "A financial/ecommerce dashboard that displays data stored in a MongoDB database via Mongoose, Express and Node.js. Items page allows for CRUD operations on a dataset located in Mongo via an API I've built. UI is created with MUI and charts with Recharts. Customizing MUI theme with TypeScript is an experience to be remembered.",
   },
   {
     title: "jaceksmoter.com",
